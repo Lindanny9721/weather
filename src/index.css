@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+/* import used for common google fonts*/
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Outfit', 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0,0,0,0.4);
+  color: #fff;
+}
+
+.app:before {
+  background: url('./assets/snowy-mountain.jpeg') no-repeat center center/cover;
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+.data-container {
+  display:flex;
+  align-items: center;
+  padding: 2em;
+  border-radius: 30px;
+  width: 100%;
+  margin: 1em;
+}
+
+.rounded-container{
+  display: flex;
+  align-items: baseline;
+
+  padding: 0;
+  border-radius: 25px;
+  border: 4px solid grey;
+  background-color: rgba(255,255,255, 0.5);
+  padding: 20px; 
+  width: 100%;
+
+  color: black;
+}
+
+.rounded-container-error{
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: baseline;
+
+  padding: 0;
+  border-radius: 25px;
+  border: 4px solid grey;
+  background-color: rgba(255,255,255, 0.5);
+  padding: 20px; 
+  margin-left: 30%;
+  margin-right: 30%;
+  margin-bottom: 5%;
+
+  
+  font-weight: bold;
+  color: black;
+}
+
+p {
+  font-size: 1.6rem;
+}
+
+h1 {
+  font-size: 6rem;
+  margin: 7%;
+}
+
+
+
+.search-field {
+  height: 10%;
+  text-align: center;
+  padding: 1rem;
+  z-index: 100;
+}
+
+.app input {
+  padding: .7rem 1.5rem;
+  font-size: 1.2rem;
+  border-radius: 25px;
+  border: 1px solid rgba(255,255,255, 0.8);
+  background: rgba(255,255,255, 0.1);
+  color: #f8f8f8;
+}
+
+::placeholder {
+  color: #f8f8f8;
+}
+
+.week{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  /* display: grid;
+  grid-template-columns: auto auto auto auto auto;
+  grid-template-rows: 150px 300px;
+  grid-gap: 50px;
+  padding: 30px; */ 
+}
+.days {
+  justify-content: space-around;
+  border-radius: 2px;
+  border: 1px solid rgba(255,255,255, 0.8);
+  background: rgba(255,255,255, 0.1);
+  cursor: pointer;
+  padding: 20px;
+  border-radius: 25px;
+}
